@@ -28,6 +28,8 @@ func main() {
 
 	log.Fatal(srv.ListenAndServe())
 
+	log.Println("Started.  Listening at 0.0.0.0:8080")
+
 }
 
 func Root(w http.ResponseWriter, req *http.Request) {

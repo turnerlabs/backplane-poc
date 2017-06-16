@@ -11,6 +11,8 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 ADD backplane-poc /backplane-poc
 
-ADD backplane /backplane
+ADD backplane /usr/local/bin/backplane
 
 CMD ["/usr/bin/supervisord"]
+
+#ENTRYPOINT ["/backplane-poc"]
